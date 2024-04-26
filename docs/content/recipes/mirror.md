@@ -12,6 +12,11 @@ each consumer fetches an images it doesn't have locally, from the external regis
 You can run a local registry mirror and point all your consumers
 there, to avoid this extra internet traffic.
 
+> **Note**
+>
+> Currently Docker daemon supports only mirrors of Docker Hub.
+> It is not possible to run the Docker daemon against a pull through cache with another upstream registry.
+
 ### Alternatives
 
 Alternatively, if the set of images you are using is well delimited, you can
